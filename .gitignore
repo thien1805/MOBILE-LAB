@@ -1,0 +1,24 @@
+.DS_Store
+Thumbs.db
+
+# Android / Gradle local state
+.gradle/
+build/
+captures/
+local.properties
+secrets.properties
+*.jks
+*.keystore
+
+# IDE local state
+.idea/workspace.xml
+.idea/tasks.xml
+.idea/shelf/
+**/.idea/workspace.xml
+**/.idea/tasks.xml
+**/.idea/shelf/
+**/.idea/caches/
+**/.idea/deploymentTargetSelector.xml
+**/.idea/deviceManager.xml
+**/.idea/copilot.data.migration.ask2agent.xml
+*.iml

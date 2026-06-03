@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Fitness Quest</string>
+
+    <!-- Titles -->
+    <string name="title_dashboard">Quest Dashboard</string>
+    <string name="title_steps">Steps</string>
+    <string name="title_calories">Calories</string>
+    <string name="title_points">Quest Points</string>
+    <string name="title_badges">Badges</string>
+    <string name="title_progress">Daily Progress</string>
+    <string name="title_gemini">Gemini Coach</string>
+    <string name="title_level">Level</string>
+
+    <!-- Labels -->
+    <string name="label_today_steps">Today\'s Steps</string>
+    <string name="label_total_steps">Total Steps</string>
+    <string name="label_calories_burned">Calories Burned</string>
+    <string name="label_points_earned">Points Earned</string>
+    <string name="label_next_milestone">Next Milestone</string>
+    <string name="label_steps_to_goal">Steps to Goal</string>
+    <string name="label_achievements">Achievements</string>
+    <string name="label_motivation">Daily Motivation</string>
+    <string name="label_workout_suggestion">Workout Suggestion</string>
+    <string name="label_generate">Generate</string>
+
+    <!-- Stats -->
+    <string name="format_steps">%d steps</string>
+    <string name="format_calories">%.1f cal</string>
+    <string name="format_points">%d pts</string>
+    <string name="format_progress">%d / 10000</string>
+    <string name="format_percent">%d%%</string>
+
+    <!-- Milestones -->
+    <string name="milestone_1000">Bronze Walker</string>
+    <string name="milestone_5000">Silver Strider</string>
+    <string name="milestone_10000">Gold Runner</string>
+    <string name="milestone_25000">Platinum Champion</string>
+
+    <!-- Descriptions -->
+    <string name="desc_milestone_1000">Walked 1,000 steps</string>
+    <string name="desc_milestone_5000">Walked 5,000 steps</string>
+    <string name="desc_milestone_10000">Walked 10,000 steps</string>
+    <string name="desc_milestone_25000">Walked 25,000 steps</string>
+
+    <!-- Gemini -->
+    <string name="gemini_api_key_hint">Enter Gemini API Key</string>
+    <string name="gemini_generating">Generating suggestion…</string>
+    <string name="gemini_error">Failed to generate. Check your API key.</string>
+
+    <!-- General -->
+    <string name="loading">Loading…</string>
+    <string name="error_db">Database error</string>
+</resources>

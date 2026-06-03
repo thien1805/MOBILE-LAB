@@ -1,0 +1,73 @@
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/edtLabel"
+            android:hint="A New Alarm!"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <CheckBox
+            android:id="@+id/cbMon"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Monday"/>
+
+        <CheckBox
+            android:id="@+id/cbTue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tuesday"/>
+
+        <CheckBox
+            android:id="@+id/cbWed"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Wednesday"/>
+
+        <CheckBox
+            android:id="@+id/cbThu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Thursday"/>
+
+        <CheckBox
+            android:id="@+id/cbFri"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Friday"/>
+
+        <CheckBox
+            android:id="@+id/cbSat"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Saturday"/>
+
+        <CheckBox
+            android:id="@+id/cbSun"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sunday"/>
+
+        <Button
+            android:id="@+id/btnSave"
+            android:text="Save Alarm"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+    </LinearLayout>
+
+</ScrollView>
