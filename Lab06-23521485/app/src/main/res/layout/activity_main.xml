@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D1117">
+
+    <!-- ── TIÊU ĐỀ ──────────────────────────────────────────── -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Document Shadow Remover"
+        android:textColor="#58A6FF"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:padding="16dp"
+        android:background="#161B22"/>
+
+    <!-- ── EXERCISE 1: Face Detection shortcut ───────────────── -->
+    <Button
+        android:id="@+id/btn_face_detection"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginTop="8dp"
+        android:text="👤  Exercise 1: Face Detection →"
+        android:textColor="#FFFFFF"
+        android:textSize="13sp"
+        android:backgroundTint="#238636"/>
+
+    <!-- ── ẢNH HIỂN THỊ (img_view) ──────────────────────────── -->
+    <ImageView
+        android:id="@+id/img_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:scaleType="fitCenter"
+        android:background="#161B22"
+        android:layout_margin="12dp"
+        android:padding="4dp"/>
+
+    <!-- ── HÀNG NÚT 1: Load + Shadow Removal ────────────────── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="6dp">
+
+        <!-- Load image (btn_load) -->
+        <Button
+            android:id="@+id/btn_load"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="6dp"
+            android:text="📂 Load"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:backgroundTint="#1F6FEB"/>
+
+        <!-- g1: Shadow Removal – bài tập chính -->
+        <Button
+            android:id="@+id/btn_g1"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1.4"
+            android:text="✨ Shadow Removal"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:backgroundTint="#388BFD"/>
+
+    </LinearLayout>
+
+    <!-- ── HÀNG NÚT 2: g2 ~ g5 ──────────────────────────────── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginHorizontal="12dp"
+        android:layout_marginBottom="16dp">
+
+        <!-- g2: Grayscale -->
+        <Button
+            android:id="@+id/btn_g2"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:text="⬛ Gray"
+            android:textColor="#C9D1D9"
+            android:textSize="12sp"
+            android:backgroundTint="#21262D"/>
+
+        <!-- g3: Threshold -->
+        <Button
+            android:id="@+id/btn_g3"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:text="📝 Thresh"
+            android:textColor="#C9D1D9"
+            android:textSize="12sp"
+            android:backgroundTint="#21262D"/>
+
+        <!-- g4: Canny Edge -->
+        <Button
+            android:id="@+id/btn_g4"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="4dp"
+            android:text="🔍 Edge"
+            android:textColor="#C9D1D9"
+            android:textSize="12sp"
+            android:backgroundTint="#21262D"/>
+
+        <!-- g5: Hiện ảnh gốc -->
+        <Button
+            android:id="@+id/btn_g5"
+            android:layout_width="0dp"
+            android:layout_height="48dp"
+            android:layout_weight="1"
+            android:text="🔄 Gốc"
+            android:textColor="#C9D1D9"
+            android:textSize="12sp"
+            android:backgroundTint="#21262D"/>
+
+    </LinearLayout>
+
+</LinearLayout>

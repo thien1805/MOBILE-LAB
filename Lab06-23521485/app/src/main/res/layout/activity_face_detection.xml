@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#0D1117">
+
+    <!-- ── HEADER ──────────────────────────────────────────── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:background="#161B22"
+        android:padding="16dp"
+        android:gravity="center_vertical">
+
+        <Button
+            android:id="@+id/fd_btn_back"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:text="← Back"
+            android:textSize="12sp"
+            android:backgroundTint="#21262D"
+            android:textColor="#C9D1D9"
+            android:layout_marginEnd="12dp"/>
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="👤 Face Detection"
+            android:textColor="#3FB950"
+            android:textSize="20sp"
+            android:textStyle="bold"/>
+
+    </LinearLayout>
+
+    <!-- ── SUBTITLE ─────────────────────────────────────────── -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Exercise 1 – Nhận diện khuôn mặt với ML Kit"
+        android:textColor="#8B949E"
+        android:textSize="13sp"
+        android:gravity="center"
+        android:paddingVertical="8dp"
+        android:background="#161B22"/>
+
+    <!-- ── KẾT QUẢ TEXT ─────────────────────────────────────── -->
+    <TextView
+        android:id="@+id/fd_tv_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tải ảnh khuôn mặt (ảnh của bạn) để bắt đầu"
+        android:textColor="#58A6FF"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:padding="10dp"
+        android:background="#0D2137"/>
+
+    <!-- ── PREVIEW ẢNH ──────────────────────────────────────── -->
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="12dp"
+        android:background="#161B22">
+
+        <ImageView
+            android:id="@+id/fd_img_view"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitCenter"
+            android:padding="4dp"/>
+
+        <!-- Placeholder -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="🤳"
+                android:textSize="72sp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Chụp ảnh khuôn mặt của bạn"
+                android:textColor="#8B949E"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+
+        <!-- Loading spinner -->
+        <ProgressBar
+            android:id="@+id/fd_progress"
+            android:layout_width="64dp"
+            android:layout_height="64dp"
+            android:layout_gravity="center"
+            android:visibility="gone"
+            android:indeterminateTint="#3FB950"/>
+
+    </FrameLayout>
+
+    <!-- ── NÚT ĐIỀU KHIỂN ───────────────────────────────────── -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="12dp"
+        android:background="#161B22">
+
+        <!-- Tải ảnh từ gallery -->
+        <Button
+            android:id="@+id/fd_btn_load"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1"
+            android:layout_marginEnd="8dp"
+            android:text="📷 Tải Ảnh"
+            android:textColor="#FFFFFF"
+            android:textSize="14sp"
+            android:backgroundTint="#1F6FEB"/>
+
+        <!-- Nhận diện khuôn mặt -->
+        <Button
+            android:id="@+id/fd_btn_detect"
+            android:layout_width="0dp"
+            android:layout_height="52dp"
+            android:layout_weight="1.4"
+            android:text="🔍 Nhận Diện Khuôn Mặt"
+            android:textColor="#FFFFFF"
+            android:textSize="13sp"
+            android:backgroundTint="#238636"/>
+
+    </LinearLayout>
+
+</LinearLayout>

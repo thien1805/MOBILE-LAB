@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Document Filter</string>
+    <string name="load_image">Tải Ảnh</string>
+    <string name="shadow_remove">Xoá Bóng</string>
+    <string name="filter_gray">Xám</string>
+    <string name="filter_threshold">Nhị phân</string>
+    <string name="filter_edge">Cạnh</string>
+    <string name="filter_original">Gốc</string>
+</resources>

@@ -1,0 +1,23 @@
+# ─── Android Studio generated ───────────────────────────────────────
+*.iml
+.gradle/
+.idea/
+local.properties
+
+# ─── Build outputs (generated, không cần upload) ─────────────────────
+build/
+app/build/
+
+# ─── Keystore / secrets (TUYỆT ĐỐI không upload) ─────────────────────
+*.jks
+*.keystore
+keystore.properties
+
+# ─── OS / Editor junk ─────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# ─── Gradle wrapper JARs (tuỳ chọn – nên giữ để CI/CD chạy được) ─────
+# gradle/wrapper/gradle-wrapper.jar

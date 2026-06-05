@@ -1,0 +1,11 @@
+<resources>
+    <!-- Base application theme -->
+    <style name="Theme.DocumentFilter" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:windowBackground">@color/bgDark</item>
+        <item name="android:statusBarColor">@color/bgCard</item>
+        <item name="android:navigationBarColor">@color/bgCard</item>
+    </style>
+</resources>
